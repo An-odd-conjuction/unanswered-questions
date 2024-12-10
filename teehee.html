@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Date?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Libre Baskerville', serif; /* Reverting to the original font */
+            background: #1d2d21; /* Dark Forest Green */
+            color: #e4e4e4;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 40px;
+            background-color: #3e5c3f; /* Rich Dark Green */
+            color: #f1e6d2;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif; /* Playfair Display for the title */
+            font-size: 4rem;
+            margin: 0;
+            color: #d4af37; /* Gold Accent */
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            font-style: italic;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0 15%;
+            background-color: #2e3a2b; /* Dark Brownish Green */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        /* Left and Right sides with Leafy Backgrounds */
+        .left-side,
+        .right-side {
+            position: absolute;
+            top: 0;
+            width: 10%;
+            height: 100%;
+            z-index: -1;
+            background-size: cover;
+            background-position: center center;
+        }
+        .left-side {
+            left: 0;
+            background-image: url('https://images.unsplash.com/photo-1601763166016-52f8dcb9be56'); /* Leafy image for left side */
+        }
+        .right-side {
+            right: 0;
+            background-image: url('https://images.unsplash.com/photo-1600531755229-f41e413d3301'); /* Leafy image for right side */
+        }
+        .message {
+            margin: 20px auto;
+            font-size: 1.3rem;
+            max-width: 700px;
+            background: rgba(62, 62, 62, 0.8); /* Dark transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .message span {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #d4af37; /* Gold Accent */
+        }
+        .image {
+            margin: 20px auto;
+            width: 70%; /* Adjusting the width to match the container */
+            max-width: 90%; /
+        }
+        .image img {
+            width: 120%;
+            height: 50%;
+            border-radius: 2px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #d4af37;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            background-color: #c49e30; /* Darker gold */
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #b2b2b2;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coffee With Me?</h1>
+        <p>The art of conversation over a warm cup ☕✨</p>
+    </header>
+    <div class="left-side"></div> <!-- Left side with leaf image -->
+    <div class="right-side"></div> <!-- Right side with leaf image -->
+    <div class="container">
+        <div class="message">
+            <p><span>Liefste Lieschen</span>,</p>
+            <p>Ek voel dat die eerste date belangrik is en so ook die manier hoe dit gevra is...</p>
+            <p>Dit sal vir 'n groot voorreg wees indien jy saam met my kan gaan vir 'n ordentlike koppie koffie. Dan kan ons gesels oor wat ons nou eintlik dink van mekaar</p>
+        </div>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Romantic Coffee Date">
+        </div>
+        <a class="cta-button" href="javascript:alert('Hell Yeah! ☕❤️')">SÊ JA!</a>
+    </div>
+    <footer>
+        <p>❤️de Anelri </p>
+    </footer>
+</body>
+</html>
